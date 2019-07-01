@@ -18,7 +18,6 @@
 #define VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
 
 #include <vendor/lineage/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
-#include <vendor/xiaomi/hardware/displayfeature/1.0/IDisplayFeature.h>
 #include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
 
 namespace vendor {
@@ -32,11 +31,10 @@ namespace implementation {
 using ::android::sp;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
-using ::vendor::xiaomi::hardware::displayfeature::V1_0::IDisplayFeature;
 using ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint;
 
 class FingerprintInscreen : public IFingerprintInscreen {
-  public:
+public:
     FingerprintInscreen();
     Return<int32_t> getPositionX() override;
     Return<int32_t> getPositionY() override;
@@ -52,10 +50,9 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<void> setLongPressEnabled(bool enabled) override;
     Return<int32_t> getDimAmount(int32_t brightness) override;
     Return<bool> shouldBoostBrightness() override;
-    Return<void> setCallback(const sp<IFingerprintInscreenCallback>& callback) override;
+    Return<void> setCallback(const sp<::vendor::lineage::biometrics::fingerprint::inscreen::V1_0::IFingerprintInscreenCallback>& callback) override;
 
-  private:
-    sp<IDisplayFeature> xiaomiDisplayFeatureService;
+private:
     sp<IXiaomiFingerprint> xiaomiFingerprintService;
 };
 
