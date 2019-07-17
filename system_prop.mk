@@ -49,6 +49,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1
 
+# Enable EGL image tracking on SF for b/137514000
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_egl_image_tracker=1
+
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.overlay.izat.optin=rro
