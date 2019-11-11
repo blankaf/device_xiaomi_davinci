@@ -64,9 +64,6 @@ debug.sf.early_app_phase_offset_ns=500000
 debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_gl_app_phase_offset_ns=15000000
 
-# GPS
-persist.vendor.overlay.izat.optin=rro
-
 # IOP
 vendor.iop.enable_prefetch_ofr=0
 vendor.iop.enable_uxe=0
