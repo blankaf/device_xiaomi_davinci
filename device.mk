@@ -35,7 +35,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Permissions
 PRODUCT_COPY_FILES += \
-   frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml
+   frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -111,8 +111,8 @@ PRODUCT_COPY_FILES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/sm6150-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/keylayout/sm6150-tavil-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
 
 # IRQ
 PRODUCT_COPY_FILES += \
