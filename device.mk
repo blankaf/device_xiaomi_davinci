@@ -41,6 +41,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
+# AOT Preload
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI \
+    NexusLauncherRelease
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
@@ -60,10 +65,6 @@ PRODUCT_COPY_FILES += \
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
-
-# Dex
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
 
 # Display
 PRODUCT_PACKAGES += \
