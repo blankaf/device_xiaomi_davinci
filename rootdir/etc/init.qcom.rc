@@ -13,6 +13,14 @@ on init
     write /sys/block/sde/queue/read_ahead_kb 2048
     write /sys/block/sde/queue/nr_requests 256
 
+    # Mask up vendor overlay
+    mount none /system/etc/fs_none /vendor/overlay/DevicesAndroidOverlay.apk bind
+    mount none /system/etc/fs_none /vendor/overlay/DevicesOverlay.apk bind
+    mount none /system/etc/fs_none /vendor/overlay/DocumentsUIOverlay/DocumentsUIOverlay.apk bind
+    mount none /system/etc/fs_none /vendor/overlay/FrameworksResCommon.apk bind
+    mount none /system/etc/fs_none /vendor/overlay/FrameworksResTarget.apk bind
+    mount none /system/etc/fs_none /vendor/overlay/SystemUIResCommon.apk bind
+
 on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 
