@@ -39,7 +39,7 @@ void load_davinciglobal() {
     property_override("ro.build.product", "davinci");
     property_override("ro.product.device", "davinci");
     property_override("ro.build.description", "davinci-user 9 PKQ1.181121.001 V10.3.1.0.PFKEUXM release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
 }
 
 void load_davinciin() {
@@ -47,7 +47,7 @@ void load_davinciin() {
     property_override("ro.build.product", "davinciin");
     property_override("ro.product.device", "davinciin");
     property_override("ro.build.description", "davinciin-user 9 PKQ1.181121.001 V10.3.3.0.PFKINXM release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
 }
 
 void load_davinci() {
@@ -55,7 +55,7 @@ void load_davinci() {
     property_override("ro.build.product", "davinci");
     property_override("ro.product.device", "davinci");
     property_override("ro.build.description", "davinci-user 9 PKQ1.181121.001 V10.3.12.0.PFKCNXM release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
 }
 
 
