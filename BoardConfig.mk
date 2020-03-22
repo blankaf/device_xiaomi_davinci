@@ -8,7 +8,7 @@ BOARD_VENDOR := xiaomi
 
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/xiaomi/raphael
+DEVICE_PATH := device/xiaomi/davinci
 
 # Architecture
 TARGET_ARCH := arm64
@@ -28,10 +28,10 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := raphael,raphaelin
+TARGET_OTA_ASSERT_DEVICE := davinci,davinciin
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := msmnile
+TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -46,16 +46,16 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CONFIG := raphael_defconfig
+  TARGET_KERNEL_CONFIG := vendor/hasty_davinci_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
+  TARGET_KERNEL_SOURCE := kernel/xiaomi/davinci
 endif
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-FORCE_QCOM_DISPLAY_HAL_VARIANT := sm8150
-TARGET_BOARD_PLATFORM := msmnile
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
+FORCE_QCOM_DISPLAY_HAL_VARIANT := sm6150
+TARGET_BOARD_PLATFORM := sm6150
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -104,9 +104,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibi
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_raphael
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_davinci
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_raphael
+TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
@@ -153,7 +153,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -164,4 +164,4 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
--include vendor/xiaomi/raphael/BoardConfigVendor.mk
+-include vendor/xiaomi/davinci/BoardConfigVendor.mk

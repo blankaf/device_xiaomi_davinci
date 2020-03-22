@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/raphael/raphael-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/davinci/davinci-vendor.mk)
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.raphael
+    lineage.biometrics.fingerprint.inscreen@1.0-service.davinci
 
 # FM
 PRODUCT_PACKAGES += \
@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/sm8150-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
+    $(LOCAL_PATH)/keylayout/sm6150-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.raphael
+    android.hardware.power@1.2-service.davinci
 
 # Ril
 PRODUCT_PACKAGES += \
@@ -150,7 +150,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.raphael
+    android.hardware.usb@1.0-service.davinci
 
 # WiFi Display
 PRODUCT_PACKAGES += \
