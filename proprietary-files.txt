@@ -1,6 +1,6 @@
 # Audio
-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|5e47ee679a500e3452160e390a42f210b415a039
-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|74bd1983958010a74b66d46018b033498202bf19
+vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|5ea2812a582c76f7db3a7e5e4fb4cc33bbca3d9b
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|776906b3f70c7764245e8b394fd23333aa811bfd
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -126,12 +126,9 @@ product/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Input
-etc/excluded-input-devices.xml
-
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|78d1ef42447dcae6c506ee35a6bea0dd7612af7c
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|0741b5ada5d9da2227b4ff0bc77c3be7d6eb430b
 
 # Perf
 product/lib64/vendor.qti.hardware.iop@2.0.so
@@ -140,18 +137,18 @@ product/lib/vendor.qti.hardware.iop@2.0.so
 product/lib/vendor.qti.hardware.perf@2.0.so
 
 # Popup camera sound effects
-product/media/audio/ui/popup_cangmen_down.ogg
-product/media/audio/ui/popup_cangmen_up.ogg
-product/media/audio/ui/popup_chilun_down.ogg
-product/media/audio/ui/popup_chilun_up.ogg
-product/media/audio/ui/popup_jijia_down.ogg
-product/media/audio/ui/popup_jijia_up.ogg
-product/media/audio/ui/popup_mofa_down.ogg
-product/media/audio/ui/popup_mofa_up.ogg
-product/media/audio/ui/popup_muqin_down.ogg
-product/media/audio/ui/popup_muqin_up.ogg
-product/media/audio/ui/popup_yingyan_down.ogg
-product/media/audio/ui/popup_yingyan_up.ogg
+media/audio/ui/popup_cangmen_down.ogg:product/media/audio/ui/popup_cangmen_down.ogg
+media/audio/ui/popup_cangmen_up.ogg:product/media/audio/ui/popup_cangmen_up.ogg
+media/audio/ui/popup_chilun_down.ogg:product/media/audio/ui/popup_chilun_down.ogg
+media/audio/ui/popup_chilun_up.ogg:product/media/audio/ui/popup_chilun_up.ogg
+media/audio/ui/popup_jijia_down.ogg:product/media/audio/ui/popup_jijia_down.ogg
+media/audio/ui/popup_jijia_up.ogg:product/media/audio/ui/popup_jijia_up.ogg
+media/audio/ui/popup_mofa_down.ogg:product/media/audio/ui/popup_mofa_down.ogg
+media/audio/ui/popup_mofa_up.ogg:product/media/audio/ui/popup_mofa_up.ogg
+media/audio/ui/popup_muqin_down.ogg:product/media/audio/ui/popup_muqin_down.ogg
+media/audio/ui/popup_muqin_up.ogg:product/media/audio/ui/popup_muqin_up.ogg
+media/audio/ui/popup_yingyan_down.ogg:product/media/audio/ui/popup_yingyan_down.ogg
+media/audio/ui/popup_yingyan_up.ogg:product/media/audio/ui/popup_yingyan_up.ogg
 
 # OMX
 lib/libstagefright_softomx.so
@@ -177,7 +174,7 @@ product/framework/qcrilhook.jar
 product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
 
 # Soter
--app/SoterService/SoterService.apk
+-vendor/app/SoterService/SoterService.apk:app/SoterService/SoterService.apk
 
 # WiFi Display
 bin/wfdservice
