@@ -51,4 +51,6 @@
          near events -->
     <bool name="doze_brightness_sensor_reports_proximity" translatable="false">false</bool>
 
+    <!-- Whether to show biometric help only when failed -->
+    <bool name="config_biometricHelpShowOnlyWhenFailed">true</bool>
 </resources>
