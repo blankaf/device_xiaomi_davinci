@@ -10,8 +10,10 @@ lib/libsdsprpc_system.so
 product/framework/vendor.qti.voiceprint-V1.0-java.jar
 product/lib64/vendor.qti.voiceprint@1.0.so
 product/lib/vendor.qti.voiceprint@1.0.so
-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|5ea2812a582c76f7db3a7e5e4fb4cc33bbca3d9b
-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|776906b3f70c7764245e8b394fd23333aa811bfd
+
+# Libvolumelistener - hotdog-user 10 QKQ1.190716.003 2003061855 release-keys
+vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|cca769025a724c7f31e8564f004e9cc0093f2492
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|30d0af558df425bef2cb36f6b1596a08adaaaa53
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
