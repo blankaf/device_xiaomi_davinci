@@ -39,7 +39,6 @@ void load_davinciglobal() {
     property_override("ro.build.product", "davinci");
     property_override("ro.product.device", "davinci");
     property_override("ro.build.description", "davinci-user 10 QKQ1.190825.002 V11.0.4.0.QFJMIXM release-keys");
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
 }
 
 void load_davinciin() {
@@ -47,15 +46,13 @@ void load_davinciin() {
     property_override("ro.build.product", "davinciin");
     property_override("ro.product.device", "davinciin");
     property_override("ro.build.description", "davinciin-user 10 QKQ1.190825.002 V11.0.2.0.QFJINXM release-keys");
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
 }
 
 void load_davinci() {
     property_override("ro.product.model", "Redmi K20");
     property_override("ro.build.product", "davinci");
     property_override("ro.product.device", "davinci");
-    property_override("ro.build.description", "davinci-user 10 QKQ1.190825.002 V11.0.4.0.QFJCNXM release-keys");
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
+    property_override("ro.build.description", "davinci-user 10 QKQ1.190825.002 V11.0.6.0.QFJCNXM release-keys");
 }
 
 
@@ -74,5 +71,7 @@ void vendor_load_properties() {
 
     property_override("ro.oem_unlock_supported", "0");
     property_override("ro.apex.updatable", "true");
-    property_override("vendor.audio.adm.buffering.ms", "6");
+    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    property_override("ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    property_override("ro.odm.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
 }
