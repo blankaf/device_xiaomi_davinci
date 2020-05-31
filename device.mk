@@ -63,7 +63,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData \
     libqdMetaData.system \
-    libvulkan
+    libvulkan \
+    vendor.display.config@1.7
 
 # Fingerprint
 PRODUCT_PACKAGES += \
