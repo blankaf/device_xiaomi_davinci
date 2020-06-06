@@ -41,7 +41,6 @@
 #define FOD_SENSOR_SIZE 190
 
 #define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness"
-#define DOZE_BRIGHTNESS_PATH "/sys/class/drm/card0-DSI-1/doze_brightness"
 
 namespace vendor {
 namespace lineage {
@@ -100,9 +99,7 @@ Return<void> FingerprintInscreen::onPress() {
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    if (get(DOZE_BRIGHTNESS_PATH, 0) == 1) {
-	set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
-    }
+    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     TouchFeatureService->setTouchMode(Touch_Fod_Enable, 0);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
